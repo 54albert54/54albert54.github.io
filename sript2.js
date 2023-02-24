@@ -471,7 +471,7 @@ class Enemy4M{
 
 
 for (let i = 0 ; i < numberOfEnemies;i++) {
-    enemiesArray.push(new Enemy1M(),new Enemy2()M,new Enemy3()M,new Enemy4M());
+    enemiesArray.push(new Enemy1M(),new Enemy2M(),new Enemy3M(),new Enemy4M());
     
 }
 

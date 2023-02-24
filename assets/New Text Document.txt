@@ -1,0 +1,13 @@
+
+
+
+
+canvas.addEventListener("mousedown", (e) => {
+                
+                this.newX = e.offsetX;
+               this.newY = e.offsetY;
+               console.log(e.offsetX)
+               
+               
+           }); 
+            

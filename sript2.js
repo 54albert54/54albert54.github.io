@@ -5,14 +5,14 @@ const CANVAS_WIDTH=canvas.width=500;
 const CANVAS_HEIGHT=canvas.height=1000;
   const numberOfEnemies=20;
 const numberOfEnemies2=5;
-let enemiesArray=[];
+const enemiesArray=[];
 
 
  const seguirMause=document.getAnimations('canvas1');
 
 
 function myFunction() {
-  enemiesArray=[];
+ const enemiesArray=[];
   document.getElementById("demo").innerHTML = "Hello World";
 }
 

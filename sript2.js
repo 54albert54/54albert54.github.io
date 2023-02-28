@@ -11,10 +11,6 @@ const enemiesArray=[];
  const seguirMause=document.getAnimations('canvas1');
 
 
-function myFunction() {
- const enemiesArray=[];
-  document.getElementById("demo").innerHTML = "Hello World";
-}
 
   
 

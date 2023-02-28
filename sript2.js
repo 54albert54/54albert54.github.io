@@ -5,13 +5,17 @@ const CANVAS_WIDTH=canvas.width=500;
 const CANVAS_HEIGHT=canvas.height=1000;
   const numberOfEnemies=20;
 const numberOfEnemies2=5;
-const enemiesArray=[];
+let enemiesArray=[];
 
 
  const seguirMause=document.getAnimations('canvas1');
 
 
- 
+function myFunction() {
+  enemiesArray=[];
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
   
 
 
@@ -471,7 +475,7 @@ for (let i = 0 ; i < numberOfEnemies2;i++) {
 
 
 for (let i = 0 ; i < numberOfEnemies;i++) {
-    enemiesArray.push(,new Enemy2M(),new Enemy3M(),new Enemy4M());
+    enemiesArray.push(new Enemy2M(),new Enemy3M(),new Enemy4M());
     
 }
 

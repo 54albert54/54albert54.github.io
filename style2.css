@@ -1,16 +1,26 @@
 body{
-    background:#2271b3;
+  margin: 0;
+  background:#cbced0;
+  font-family: Arial, sans-serif;
 }
-#canvas1{
+#main{
+  margin: 20px;
+  background-color: white;
+  border: 1px solid #000;
+  width: 90%;
+  padding-left: 10px;
+}
+.section{
+  background-color: white;
+  display: wrap;
+  width: 600px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #000;
+  box-shadow: 0px 2px 20px 3px #000;
+}
+#main img{
+  width: 200px;
 
-    
-    
-    border:3px solid black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 75%;
-    width: 75%;
 
 }

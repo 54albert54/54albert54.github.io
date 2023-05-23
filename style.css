@@ -1,64 +1,85 @@
+:root {
+  --color-primario: #f2f2f2;
+  --color-fuente:#1848DE;
+  --fontL: 32px;
+  --fontM: 14px;
+  --fontS: 14px;
+}
+
 *{
   padding: 0;
   margin: 0;
 }
+
 .sticky-menu {
   /* position: sticky;
   top: 0;
   background-color: #f2f2f2;
   z-index: 100; */
   display: flex;
+  flex-direction: column;
   position: fixed;
-  height: 40px;
+ 
       top: 0;
       left: 0;
-      width: 100%;
-      background-color: #f5f5f5;
+      width: 230px;
+      height: 100%;
+      background-color: #ca1d1d;
+      background-image: linear-gradient(to bottom, #4526f4, #0f0f0f);
+      /* background-color: #f5f5f5; */
       padding: 30px;
-      font-size: 32px;
+      font-size: var(--fontL);
 }
 .sticky-menu img{
   width: 200px;
   height: 200px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   border-radius: 20px;
+  margin-left: 20px;
 }
 
 .menu-list {
+  
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
+ flex-direction: column;
+ gap: 20px;
 }
 
 .menu-list li {
-  margin-right: 20px;
+  margin: 20px;
+  
 }
 
 .menu-list li a {
-  text-decoration: none;
-  color: #555;
+  user-select: none;
+  text-decoration: solid;
+  color:#fff;
+  font-weight: bolder;
 }
 
 .menu-list li a:hover {
   color: #3498db;
+
+  text-decoration: #1848DE;
 }
 /* menu fotante */
 #inicios{
-  top: 90px;
-  left: 150px;
+  top: 270px;
+  left: 230px;
 }
 #acerca{
-  top: 90px;
-  left: 280px;
+  top: 350px;
+  left: 230px;
 }
 #proyectos{
-  top: 90px;
-  left: 390px;
+  top: 430px;
+  left: 230px;
 }
 #contacto{
-  top: 90px;
-  left: 590px;
+  top: 510px;
+  left: 230px;
 }
 
 .menu {
@@ -82,41 +103,59 @@
   position: block;
 }
 /* este es el cuerpo de la pagina */
-#inicio{
-  height: 190px;
+.vacio{
+  height: 20px;
   width: 100%;
 
 }
 body{
+  padding-left: 300px;
   margin: 0;
   background:#cbced0;
   font-family: Arial, sans-serif;
 }
 #main{
-  
+  /* position: absolute;
+  left: 400px; */
   margin: 20px;
   background-color: white;
   border: 1px solid #000;
-  width: 90%;
+  width: 93%;
   padding-left: 10px;
   border-radius: 20px;
+}
+#cetral{
+  display: flex;
+  flex-wrap: wrap;
 }
 .section{
   background-color: white;
   display: wrap;
-  width: 600px;
+  min-width:390px ;
   padding: 20px;
   margin: 20px;
   border: 1px solid #000;
   box-shadow: 0px 2px 20px 3px #000;
   border-radius: 20px;
+ 
+
+  
+}
+.section a{
+  gap: 20px;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
 
 #bc-img{
   background-color: #000;
-  width: 600px;
+  width: 530px;
   height: 800px;
-  position: absolute;
-  right: 120px;
+  
+}
+@media (max-width: 768px) {
+  #main{
+    width:600px;
+  }
 }

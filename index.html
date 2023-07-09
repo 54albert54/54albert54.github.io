@@ -1,90 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Intersection Observer</title>
 </head>
 <body>
-  <div id="tope"></div>
-  <nav class="sticky-menu">
-    <img src="https://avatars.githubusercontent.com/u/126289455?v=4" alt="mifoto">
-    <ul class="menu-list">
-      <li><a onmouseover ="showMenu('inicios')" onmouseout="hiddenMenu('inicios')"  href="#main">INICIO</a></li>
-      <li><a onmouseover ="showMenu('acerca')" onmouseout="hiddenMenu('acerca')"  href="#acerca">ACERCA</a></li>
-      <li><a onmouseover ="showMenu('proyectos')" onmouseout="hiddenMenu('proyectos')" href="#github">PROYECTOS</a></li>
-      <li><a onmouseover ="showMenu('contacto')" onmouseout="hiddenMenu('contacto')" href="#Sociales">CONTACTO</a></li>
-      <li><a href="./proyecto.html"> apple</a></li> 
-      <li><a href=""> apples</a></li> 
-      <li><a href="./proyecto.html"> applesss</a></li> 
-    </ul>
-  </nav>
-  
-  <main id="central">
-   
+	<div class="boton_Menu" >
+		<svg onclick="mostrarMenu()" class="boton_Menu_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z" fill="#ffffff"></path> <path d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z" fill="#ffffff"></path> <path d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z" fill="#ffffff"></path> </g></svg>
+		<section class="navbar aparecer">
+			<div class="navbar_boton" > <a onclick="ocultarMenu()" class="navbar_a" href="#Home" > Home</a></div>
+			<div class="navbar_boton" > <a class="navbar_a" href="http://" > About</a></div>
+			<div class="navbar_boton" > <a class="navbar_a" href="http://" > Services</a></div>
+			<div class="navbar_boton" > <a class="navbar_a" href="http://" > Proyects</a></div>
+			<div class="navbar_boton" > <a class="navbar_a" href="http://" > Contact Me</a></div>
+		</section>
+	</div>
 
-  <div id="main" class="section">
-    
-    <div class="vacio"></div>
-    <div id="inicios" class="menu" >
-      esta es una breve descripcion de menu que solo se mostrara cuando el mause pase por el raton por encima 
-    </div>
-    <div id="acerca" class="menu" >
-      cuando el mause pase por el raton por encima 
-    </div>
-    <div id="proyectos" class="menu" >
-      proyectos de los que e travajado hasta la fecha  
-    </div>
-    <div id="contacto" class="menu" >
-      proyectos de los que e travajado hasta la fecha  
-    </div>
-  
-    
-  
-      <div class="section"> 
-        
-        <h2>Datos Personales</h2>
-  
-      
-      <p>¡Bienvenido al emocionante mundo de la programación en pleno 2023!
-        Tomar la decisión de emprender en el campo de la programación es un paso valiente y lleno de oportunidades. 
-        En la era digital en la que nos encontramos, la demanda de habilidades en programación está en constante crecimiento,
-        lo que significa que hay un sinfín de posibilidades para desarrollarte profesionalmente y hacer realidad tus ideas innovadoras.      
-      </p>
-      <p>
-        Soy de Republica Dominicana una encantadora tierra llena de sabor y cultura con su inmensa diverdisad en paisajes exotico desde las
-        playas alas montañas no hay hay un solo ricon que no despeje increible belleza y naturalezas.
-      </p>
-      <p>
-        Desde muy pequeño me a atraido el mundo de la tecnologia tanto en harware y sofware, pero apenas hasta ahora me e brindado la oportunidad de poder 
-        adentrarme en este hermoso mundo de la programasion. Se que es un largo camino pues lo maravilloso y aterrador de este mundo es que no se para de aprender
-        asi que cada dia es un nuevo reto.
-      </p> 
-     
-     
-    </div>
-    
-  
-    <div class="section">
-      <h2 id="github">Proyectos</h2>
-      <p>estos son juego hechos con vanilla JavaScript para dispositivos moviles lo se no estan termindos asi que no sean tan crueles apenas estoy aprendiendo</p>
-      <a href="https://54albert54.github.io/RockLegends/">clon para mi hijo de un juego que le encata en la pc</a> <br>
-      <a href="https://54albert54.github.io/rundog/">dog Running</a> <br>
-      <a href="https://54albert54.github.io/54albert54-run/">metroid corriendo <strong> nintendo no me demandes</strong></a>
-    </div>
 
-    <div class="section" id="bc-img"> </div>
-    <div class="section">
-      <h2  id="Sociales">Redes Sociales</h2>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/angel-a-bernechea-0264b2276/">linkedin.com/angelAlbertoBernecha</a></p>
-      <p>GitHub: <a href="https://github.com/54albert54">54albert54</a></p>
-      </div>
+	<div class="hero">
+		<h2 class="hero_titulo">Hola</h2>
+		<img class="hero_img" src="https://avatars.githubusercontent.com/u/126289455?v=4" alt="img">
+		<h2> Soy Alberto Bernechea</h2>
+	</div>
+	<div class="contenedor">
+		<p id="Home">
+			<div class="relleno"></div>
+			<h1 class="contenedor_titulo" >Welcome</h1> 
+			My name is Alberto Bernechea,  I'm a front-end developerI get by with HTML CSS JavaScript React and Next.JS
+		</p>always looking to find practical and elegant solutions before the needs of my clients,<br>passionate with minimalist UIs capable of simplifying everything for a better understanding and use of the apps.
+		<div class="relleno"></div>
+		<div class="relleno"></div>
+		<img id="imagen1" class="izquierda" src="img/1.jpg" alt="">
+		<div class="relleno"></div>
+		<div class="relleno"></div>
+
+		<img id="imagen2" class="derecha"  src="img/2.jpg" alt="">
+
+
+
+	
+
+</div>
   </div>
-  </main>
-  
 
-  <script src="./main.js" ></script>
+
+	<script src="js/app.js"></script>
 </body>
 </html>

@@ -5,7 +5,10 @@ const botnInfo = document.querySelector('.botn-info')
 const extraInfo = document.querySelector('#extra-info')
 const extraInfoMovile = document.querySelector('.extra-info')
 const fixedDiv = document.querySelector('.botnes');
+const fixedDivTitle = document.querySelector('.movile-title');
 const originalOffsetTop = fixedDiv.offsetTop;
+const nameTitle = document.querySelector('#movile-name');
+const nameContainer = document.querySelector('.movile-namefixed');
 
 
 let newData = '27-agust-2023 v1.2'
@@ -21,7 +24,7 @@ let swadow = shadowWHT
 const mostrarInfoMovil = ()=>{
   skillMovil.classList.add('invisible')
   infoMovil.classList.remove('invisible')
-  botnInfo.style.background = "#fff";
+  botnInfo.style.background = "#cdcdcd";
   botnSkill.style.background = "linear-gradient(#848484,#303030) ";
   swadow = shadowBLK
 }
@@ -35,14 +38,23 @@ const mostrarSkillMovil = ()=>{
 }
 window.addEventListener('scroll', function () {
   
+  
   if (window.pageYOffset >= originalOffsetTop) {
       fixedDiv.style.position = 'fixed';
-      fixedDiv.style.top = '13px';
-      fixedDiv.style.boxShadow=` 0 4px 20px 4px ${swadow}`;
+      fixedDiv.style.top = '0';
+      fixedDiv.style.boxShadow=` 0 4px 20px 8px ${swadow}`;
       fixedDiv.style.borderRadius='0';
+      fixedDivTitle.style.opacity= "0"
+      nameContainer.classList.remove('invisible')
+      nameTitle.innerHTML = ' ANGEL BERNECHEA'
+      fixedDiv.style.background = "#000";
   } else {
       fixedDiv.style.position = 'relative';
-      fixedDiv.style.top = '';
+      fixedDiv.style.top = '4px';
       fixedDiv.style.boxShadow='none';
+      fixedDivTitle.style.opacity= "1"
+      nameTitle.innerHTML = ''
+      nameContainer.classList.add('invisible')
+      fixedDiv.style.background = "#cdcdcd";
   }
 });

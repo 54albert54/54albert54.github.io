@@ -192,6 +192,17 @@ main .CV-info-right .right-hobbies .right-hobbies-list {
     margin: 0;
     width: 228px;
   }
+  .movile-namefixed {
+    padding-top: 20px;
+    background: #000000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .movile-namefixed h2 {
+    padding: 20px;
+  }
   .CV-info-movile {
     background: rgb(60, 60, 60);
     color: rgb(255, 255, 255);
@@ -205,7 +216,7 @@ main .CV-info-right .right-hobbies .right-hobbies-list {
     display: flex;
     width: 100%;
     height: 100px;
-    transition: top 0.8s;
+    transition: top 0.3s;
   }
   .CV-info-movile .botnes button {
     border-radius: 20px 20px 0 0;
@@ -222,10 +233,17 @@ main .CV-info-right .right-hobbies .right-hobbies-list {
     color: #000000;
   }
   .movile-title {
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 0;
     background-color: #000;
   }
   .data-movil {
-    background-color: white;
+    background-color: #cdcdcd;
     color: #000;
     height: auto;
   }
@@ -298,7 +316,7 @@ main .CV-info-right .right-hobbies .right-hobbies-list {
   .CV-info-left .data .link-redes {
     display: flex;
     position: relative;
-    left: -17px;
+    left: -3px;
     gap: 20px;
   }
   .CV-info-left .data .link-redes svg {

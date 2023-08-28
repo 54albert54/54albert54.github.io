@@ -1,0 +1,193 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: rgb(239, 239, 226);
+}
+main{
+width: 900px;
+margin: 0  auto;
+margin-bottom: 50px;
+
+box-shadow: 1px 4px 5px 2px #dcdcd9;
+display: grid;
+grid-template-columns: 2fr  3fr;
+.CV-info-left{
+background: #000;
+color: white;
+font-weight: 100;
+img{
+  width: 100%;
+  
+}
+.data{
+  padding: 20px;
+  .title{
+    margin-bottom: 5px; 
+     font-weight: 100;
+    
+   }
+   .title-strong{
+    font-weight: bold;
+  }
+  .title-ul {  
+    padding-left: 20px;
+    font-weight: 100;
+    color: #e5d5d5;
+    gap: 40px;
+    margin-bottom: 20px;  
+    li{
+      border-bottom: 20px;
+    }
+    li:hover{
+      color: #fff;
+    }
+  }
+  .link-redes{
+    display: flex;
+    flex-direction: column;
+   
+    
+    svg{
+      width: 28px;
+      margin-right: 30px;
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+     
+    }
+    .link-redes-a{
+      height: 40px;
+      margin: 5px 0;
+      width: 200px;
+      display: flex;
+      border-radius: 20px;
+      padding-left: 10px;
+      transition: .1s ease-out;
+      align-items: center;
+      fill: rgb(255, 255, 255);
+    }
+    .link-redes-a:hover{
+      fill: red;
+      background-color: rgb(38, 38, 38);
+    }
+   }
+ }
+
+}
+
+.CV-info-right{
+  .resalt{
+    transition: .3s ease-in;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .resalt:hover{
+   
+    
+    p{
+    
+      padding-left: 20px;
+      font-weight: 500;
+      color: #000000;
+    }
+  }
+  background: #ffffff;
+  padding: 20px 40px;
+  h2{
+    font-weight: 400;
+  }
+  p{
+    
+    padding-left: 20px;
+    font-weight: 300;
+    color: #0d0c0c;
+  }
+  .right-title{
+    font-size: 62px;
+    margin: 30px 0;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .right-name{
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  .right-aboutme{
+   
+    padding: 10px;
+    margin-bottom: 60px;
+    h2{
+      margin-bottom: 30px;
+    }
+    p{
+      text-indent: 30px;
+    
+    }
+  }
+  .right-experience-main{
+    h2{
+      margin-bottom: 30px;
+    }
+  .right-experience{
+    display: flex;
+
+  .right-experience-barra{
+    
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    svg{
+      width: 24px;
+    }
+    .barra{
+      margin: -4px 0;
+      width:2px;
+      background-color: #000;
+    }
+    .barra1{
+      height: 250px;
+    }
+    .barra2{
+      height: 180px;
+    }
+  }
+  .right-experience-info{
+    padding-left: 30px;
+    .right-experience-datos{
+      margin-bottom: 30px;
+      ul{
+        padding-top: 10px;
+        padding-left: 40px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+}
+  .right-hobbies{
+    svg{
+      width: 28px;
+    }
+    .right-hobbies-list{
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+
+
+}

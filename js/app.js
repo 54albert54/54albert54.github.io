@@ -11,7 +11,7 @@ const nameTitle = document.querySelector('#movile-name');
 const nameContainer = document.querySelector('.movile-namefixed');
 
 
-let newData = '27-agust-2023 v1.2'
+let newData = '27-agust-2023 v1.3'
 
 extraInfo.innerHTML =  newData
 extraInfoMovile.innerHTML =  newData

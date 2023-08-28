@@ -51,7 +51,7 @@ img{
   }
   .link-redes{
     display: flex;
-    flex-direction: column;
+    
    
     
     svg{
@@ -64,9 +64,7 @@ img{
      
     }
     .link-redes-a{
-      height: 40px;
-      margin: 5px 0;
-      width: 200px;
+     
       display: flex;
       border-radius: 20px;
       padding-left: 10px;
@@ -187,7 +185,177 @@ img{
   }
 }
 
+}
+.extra{
+  padding:10px 30px  0  30px;
+  .extra-data{
+    text-indent: 30px;
+  }
+  .extra-info{
+    width: 90px;
+    margin: 20px auto;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width:431px) {
+  .CV-info-movile{
+    display: none;
+  }
+  .link-redes {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .link-redes-a{
+    height: 40px;
+    margin: 5px 0;
+    width: 200px;
+  }
+}
 
+@media screen and (max-width:430px) {
 
+ 
+  main{
+    margin: 0;
+    width: 228px;
+  }
+ 
+  .CV-info-movile{
+    background: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 92px;
+    align-items: center;
+    .botnes{
+      display: flex;
+      width: 100%;
+      height: 100px;
+      button{
+        border-radius: 20px   20px 0 0;
+        width: 50%;
+        font-size: 28px;
+        border: none;
+      }
+      .botn-skill{
+        background-color: #000;
+        color: #fff;
+      }
+      .botn-info{
+        background:linear-gradient(#848484,#303030) ;
+        color: #000000;
+      }
+    }
+  }
+  .movile-title{
+    background-color: #000;
+  }
+  .data-movil{
+    background-color: white;
+    color: #000;
+    height:auto ;
+    h2{
+      font-weight: 300;
+    }
+    .right-aboutme{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      p{
+        text-indent: 30px;
+      }
+    }
+    .right-experience-main{
+      h2{
+        margin-bottom: 20px;
+      }
+      .right-experience{
+        display: flex;
+      }
+      .right-experience-barra{
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px;
+        svg{
+          width: 24px;
+        }
+        .barra{
+          margin: -4px 0;
+          width:2px;
+          background-color: #000;
+        }
+        .barra1{
+          height: 230px;
+        }
+        .barra2{
+          height: 180px;
+        }
+      }
+      .right-experience-info{
+       
+        padding-left: 30px;
+        .right-experience-datos{
+          margin-bottom: 10px;
+          p{ 
+            padding-left: 30px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .right-hobbies{
+      width: 100%;
+      padding-top: 20px;
+     margin-bottom: 60px;
+      svg{
+        width: 28px;
+        margin-right: 30px;
+      }
+      .right-hobbies-list{
+        margin-top: 10px;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
 
+      }
+    }
+  }
+  .CV-info-left{
+    width: 100vw;
+    .data .link-redes {
+      display: flex;
+      position: relative;
+      left:-17px ;
+      gap: 20px;
+      svg{
+        position: relative;
+        left: 10px;
+        opacity: .4;
+        height: 32px;
+      }
+    }
+    .link-redes-a{
+      margin: 0 ;
+      padding-bottom: 10px;
+      width: 123px;
+      height: 68px;
+      border: 1px solid #484844;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+  
+  .CV-info-right{
+    display: none;
+  }
+  .title{
+    display: flex;
+  }
+  .invisible{
+    display: none;
+  }
 }

@@ -50,7 +50,6 @@ main .CV-info-left .data .title-ul li:hover {
 }
 main .CV-info-left .data .link-redes {
   display: flex;
-  flex-direction: column;
 }
 main .CV-info-left .data .link-redes svg {
   width: 28px;
@@ -61,9 +60,6 @@ main .CV-info-left .data .link-redes a {
   text-decoration: none;
 }
 main .CV-info-left .data .link-redes .link-redes-a {
-  height: 40px;
-  margin: 5px 0;
-  width: 200px;
   display: flex;
   border-radius: 20px;
   padding-left: 10px;
@@ -163,4 +159,169 @@ main .CV-info-right .right-hobbies .right-hobbies-list {
   margin: 10px 0;
   display: flex;
   align-items: center;
+}
+
+.extra {
+  padding: 10px 30px 0 30px;
+}
+.extra .extra-data {
+  text-indent: 30px;
+}
+.extra .extra-info {
+  width: 90px;
+  margin: 20px auto;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 431px) {
+  .CV-info-movile {
+    display: none;
+  }
+  .link-redes {
+    display: flex;
+    flex-direction: column;
+  }
+  .link-redes-a {
+    height: 40px;
+    margin: 5px 0;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 430px) {
+  main {
+    margin: 0;
+    width: 228px;
+  }
+  .CV-info-movile {
+    background: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 92px;
+    align-items: center;
+  }
+  .CV-info-movile .botnes {
+    display: flex;
+    width: 100%;
+    height: 100px;
+  }
+  .CV-info-movile .botnes button {
+    border-radius: 20px 20px 0 0;
+    width: 50%;
+    font-size: 28px;
+    border: none;
+  }
+  .CV-info-movile .botnes .botn-skill {
+    background-color: #000;
+    color: #fff;
+  }
+  .CV-info-movile .botnes .botn-info {
+    background: linear-gradient(#848484, #303030);
+    color: #000000;
+  }
+  .movile-title {
+    background-color: #000;
+  }
+  .data-movil {
+    background-color: white;
+    color: #000;
+    height: auto;
+  }
+  .data-movil h2 {
+    font-weight: 300;
+  }
+  .data-movil .right-aboutme {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .data-movil .right-aboutme p {
+    text-indent: 30px;
+  }
+  .data-movil .right-experience-main h2 {
+    margin-bottom: 20px;
+  }
+  .data-movil .right-experience-main .right-experience {
+    display: flex;
+  }
+  .data-movil .right-experience-main .right-experience-barra {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .data-movil .right-experience-main .right-experience-barra svg {
+    width: 24px;
+  }
+  .data-movil .right-experience-main .right-experience-barra .barra {
+    margin: -4px 0;
+    width: 2px;
+    background-color: #000;
+  }
+  .data-movil .right-experience-main .right-experience-barra .barra1 {
+    height: 230px;
+  }
+  .data-movil .right-experience-main .right-experience-barra .barra2 {
+    height: 180px;
+  }
+  .data-movil .right-experience-main .right-experience-info {
+    padding-left: 30px;
+  }
+  .data-movil .right-experience-main .right-experience-info .right-experience-datos {
+    margin-bottom: 10px;
+  }
+  .data-movil .right-experience-main .right-experience-info .right-experience-datos p {
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  .data-movil .right-hobbies {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 60px;
+  }
+  .data-movil .right-hobbies svg {
+    width: 28px;
+    margin-right: 30px;
+  }
+  .data-movil .right-hobbies .right-hobbies-list {
+    margin-top: 10px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .CV-info-left {
+    width: 100vw;
+  }
+  .CV-info-left .data .link-redes {
+    display: flex;
+    position: relative;
+    left: -17px;
+    gap: 20px;
+  }
+  .CV-info-left .data .link-redes svg {
+    position: relative;
+    left: 10px;
+    opacity: 0.4;
+    height: 32px;
+  }
+  .CV-info-left .link-redes-a {
+    margin: 0;
+    padding-bottom: 10px;
+    width: 123px;
+    height: 68px;
+    border: 1px solid #484844;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .CV-info-right {
+    display: none;
+  }
+  .title {
+    display: flex;
+  }
+  .invisible {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

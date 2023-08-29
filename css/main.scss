@@ -1,4 +1,5 @@
-
+$mainColor:#000;
+$colorPrueba:#04205B;
 
 *{
   
@@ -11,6 +12,11 @@
 body{
   background-color: rgb(239, 239, 226);
 }
+.foto-perfil{
+  width: 100%;
+  background-color: $mainColor;
+  height: 100px;
+}
 main{
 width: 900px;
 margin: 0  auto;
@@ -20,7 +26,7 @@ box-shadow: 1px 4px 5px 2px #dcdcd9;
 display: grid;
 grid-template-columns: 2fr  3fr;
 .CV-info-left{
-background: #000;
+background: $mainColor;
 color: white;
 font-weight: 100;
 img{
@@ -147,7 +153,7 @@ img{
     .barra{
       margin: -4px 0;
       width:2px;
-      background-color: #000;
+      background-color:$mainColor;
     }
     .barra1{
       height: 250px;
@@ -190,7 +196,7 @@ img{
   .extra-info{
     width: 90px;
     margin: 20px auto;
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 @media screen and (min-width:431px) {
@@ -249,7 +255,7 @@ img{
         border: none;
       }
       .botn-skill{
-        background-color: #000;
+        background-color: $mainColor;
         color: #fff;
       }
       .botn-info{
@@ -259,14 +265,14 @@ img{
     }
   }
   .movile-title{
-   position: relative;
-   top: 10px;
+   padding-top: 20px;
+   padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     top: 0;
-    background-color: #000;
+    background-color:$mainColor;
   }
   .data-movil{
     background-color: #cdcdcd;
@@ -274,6 +280,7 @@ img{
     height:auto ;
     h2{
       font-weight: 300;
+      margin-left: 20px;
     }
     .right-aboutme{
       margin-top: 30px;
@@ -285,7 +292,7 @@ img{
     .right-experience-main{
       h2{
         margin-bottom: 20px;
-      }
+        }
       .right-experience{
         display: flex;
       }
@@ -302,7 +309,7 @@ img{
         .barra{
           margin: -4px 0;
           width:2px;
-          background-color: #000;
+          background-color:$mainColor;
         }
         .barra1{
           height: 230px;
@@ -371,6 +378,7 @@ img{
   }
   .title{
     display: flex;
+    padding-top: 10px;
   }
   .invisible{
     display: none;

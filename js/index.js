@@ -43,10 +43,10 @@ const proyectContainerTemplate = (repoInfo)=>{
   return(
 `
 <div class="main-decorate proyect"> </div>
-<p class="title " >${repoInfo.name}</p>
+<p class="sub-title" >${repoInfo.name}</p>
 <img class="proyect-img" src="${repoInfo.img} " alt="">
 <div class="proyect-codeUsed"  >
-  <p class="sub-title">Codes Used</p>
+  <p class="infoSeccion-title">Codes Used</p>
   <div>
   ${repoInfo.showCode()}
   </div>

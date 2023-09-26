@@ -105,6 +105,13 @@ ul {
   border-radius: 50%;
 }
 
+.infoSeccion-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
 .infoSeccion {
   padding: 0 30px;
   width: 100%;
@@ -112,7 +119,7 @@ ul {
 
 .infoSeccion-title {
   margin-bottom: 30px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .title {
@@ -158,6 +165,7 @@ ul {
 }
 
 .skillSeccion {
+  position: relative;
   padding: 0 30px;
 }
 
@@ -199,6 +207,11 @@ ul {
 
 .codeSeccion-icon {
   padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  grid-auto-rows: 100px;
 }
 
 .proyectSeccion {
@@ -215,12 +228,11 @@ ul {
   position: relative;
   overflow: hidden;
   width: 380px;
-  height: 600px;
+  height: 300px;
   border-radius: 20px;
-  border: #cbcaca 1px solir;
+  border: #6d6d6d 1px solir;
   box-shadow: 1px 1px 1px #4e4e4e;
   display: flex;
-  padding-top: 30px;
   align-items: center;
   flex-direction: column;
   transition: 0.2s ease-in-out;
@@ -229,10 +241,13 @@ ul {
 
 .proyect-view:hover {
   transform: translateY(-10px);
-  box-shadow: 1px 2px 4px #4e4e4e;
+  box-shadow: 1px 2px 4px #313131;
 }
 
 .proyect-img {
+  position: absolute;
+  top: 30px;
+  right: 0px;
   margin-top: 20px;
   width: 200px;
   height: 200px;
@@ -258,13 +273,13 @@ ul {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 0px;
 }
 
 .proyect-boton {
   width: 200px;
   height: 40px;
-  padding: 10px 0 0 30px;
+  padding: 10px 0 0 0px;
   border-radius: 20px;
 }
 
@@ -272,6 +287,90 @@ ul {
   background-color: #4e4e4e;
 }
 
+.footer {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(180, 132, 186, 0.8901960784);
+  padding: 40px 0;
+}
+
+.link-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 870px) {
+  .infoSeccion-main {
+    padding: 40px 60px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .infoSeccion-dectail {
+    padding-top: 30px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .skillSeccion-soft {
+    border: none;
+    margin: 30px 0;
+    border-right: #4e4e4e 1px solid;
+    border-left: #4e4e4e 1px solid;
+  }
+  .skillSeccion-BigContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .skillSeccion-softContainerInfo {
+    width: 270px;
+    height: 300px;
+    margin: 0 10px;
+  }
+  .codeSeccion {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+  .Skills {
+    position: absolute;
+    right: 920px;
+  }
+  .skillSeccion-big {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 400px;
+  }
+  .infoSeccion-body {
+    padding: 0 50px;
+  }
+  .proyectSeccion-continer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .big-screen {
+    margin-left: 20px;
+  }
+  .link-redes {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 600px;
+    margin-bottom: 100px;
+  }
+  .whatseccion {
+    padding: 0 50px;
+  }
+}
 .inactive {
   display: none;
 }/*# sourceMappingURL=style.css.map */

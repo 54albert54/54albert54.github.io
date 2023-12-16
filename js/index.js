@@ -34,7 +34,7 @@ class RepositoyInfo{
 }
 const allRepo = []
 const pokeNatice = new RepositoyInfo('Pokedex React-Natice',"./files/pokedex.png",['react','ts','mysql'],'https://github.com/54albert54/PokeNative',`https://65111f2a70ade65a3ac6363e--astounding-kashata-dbb4fc.netlify.app`)
-const MemoryQuiz = new RepositoyInfo('Memory-Quiz',"./files/memoryp.png",['html','css','js'],'https://github.com/54albert54/memoryQuiz','https://54albert54.github.io/memoryQuiz/')
+const MemoryQuiz = new RepositoyInfo('Memory-Quiz',"./files/memoryp.png",['html','css','js'],'https://github.com/54albert54/memoryQuiz','https://memoryquiz.onrender.com')
 const RockLegends = new RepositoyInfo('Rock Legends',"./files/rocklegend.png",['html','css','js'],'https://github.com/54albert54/RockLegends2in1','https://54albert54.github.io/RockLegends2in1/')
 
 allRepo.push(pokeNatice,MemoryQuiz,RockLegends)

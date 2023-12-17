@@ -353,3 +353,26 @@ main .CV-info-right .right-hobbies .right-hobbies-list {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
+
+.newbotonCV{
+  font-size: 43px;
+}
+.botonCV{
+  cursor: pointer;
+  color: #4e4e4e;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #2d2b2d;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 6px;
+  border: #2d2b2d 2px solid;
+  text-decoration: none;
+}
+.botonCV:hover{
+  color: rgb(38, 38, 38);
+  background: #dfdfdf;
+  border: #2d2b2d 2px solid;
+}
